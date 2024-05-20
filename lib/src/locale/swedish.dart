@@ -6,7 +6,7 @@ class SwedishDurationLanguage extends DurationLocale {
   @override
   String year(int amount, [bool abbreviated = true]) {
     if (abbreviated) {
-      return 'y';
+      return 'år';
     } else {
       return 'år';
     }
@@ -15,7 +15,7 @@ class SwedishDurationLanguage extends DurationLocale {
   @override
   String month(int amount, [bool abbreviated = true]) {
     if (abbreviated) {
-      return 'mon';
+      return 'mån';
     } else {
       return 'månad' + (amount > 1 ? 'er' : '');
     }
@@ -24,7 +24,7 @@ class SwedishDurationLanguage extends DurationLocale {
   @override
   String week(int amount, [bool abbreviated = true]) {
     if (abbreviated) {
-      return 'w';
+      return 'v';
     } else {
       return 'veck' + (amount > 1 ? 'or' : 'a');
     }
@@ -42,16 +42,16 @@ class SwedishDurationLanguage extends DurationLocale {
   @override
   String hour(int amount, [bool abbreviated = true]) {
     if (abbreviated) {
-      return 'h';
+      return 't';
     } else {
-      return 'timm' + (amount > 1 ? 'ar' : 'e');
+      return 'tim' + (amount > 1 ? 'ar' : 'e');
     }
   }
 
   @override
   String minute(int amount, [bool abbreviated = true]) {
     if (abbreviated) {
-      return 'm';
+      return 'min';
     } else {
       return 'minut' + (amount > 1 ? 'er' : '');
     }
